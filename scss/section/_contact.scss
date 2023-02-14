@@ -1,0 +1,86 @@
+@use "../custom" as *;
+
+// CONTACT SECTION HOMEPAGE
+.contact-section {
+  max-height: 140vh;
+  margin-top: 2rem;
+  font-family: "Poppins", "san-serif";
+  @include media-breakpoint-down(lg) {
+        max-height: fit-content;
+      }
+
+  .box-img {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+      }
+
+    img {
+        margin: auto;
+        width: 100%;
+        border-radius: 3rem;
+    }
+  }
+  .box-text {
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .form-container {
+    display: block;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(lg) {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .service-btn {
+            margin: 0 auto;
+        }
+    }
+
+    .form-control {
+      margin-bottom: 1.5rem;
+      padding: 5px 5px 5px 10px;
+      font-weight: 500;
+    }
+  }
+
+  &.blue {
+    background-color: $primary;
+    padding: 2rem;
+
+    .row {
+      margin: 2rem 0;
+      padding: 2rem 1rem;
+      background-color: $white-trans;
+      border-radius: 2rem;
+    }
+
+  }
+
+  .technical-support {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .support-header {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    p {
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+  }
+}

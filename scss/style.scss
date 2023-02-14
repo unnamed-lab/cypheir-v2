@@ -1,0 +1,19 @@
+// IMPORT THE CUSTOMIZED BOOTSTRAP SCSS SCRIPT
+@use 'custom';
+
+
+// IMPORT COMPONENTS ATTRIBUTES
+@use 'component/animation';
+@use 'component/button';
+@use 'component/mixins';
+@use 'component/typography';
+
+// IMPORT SECTION ATTRIBUTES
+@use 'section/intro';
+@use 'section/about';
+@use 'section/contact';
+@use 'section/service';
+@use 'section/partner';
+@use 'section/statistics';
+@use 'section/testimonial';
+@use 'section/footer';

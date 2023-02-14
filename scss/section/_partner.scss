@@ -1,0 +1,35 @@
+@use "../custom" as *;
+
+// PARTNERS GALLERY SECTION
+
+.partner-section {
+  max-height: 100vh;
+  min-height: auto;
+  padding: 2rem 0;
+  font-family: "Poppins", "san-serif";
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  justify-content: center;
+  overflow-x: hidden;
+  
+  @include media-breakpoint-down(lg) {
+        max-height: fit-content;
+      }
+
+  .img-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0;
+
+    img {
+      width: 25rem;
+      margin: 0 auto;
+      @include media-breakpoint-down(lg) {
+        width: 20rem;
+      }
+    }
+  }
+}
