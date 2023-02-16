@@ -3,7 +3,7 @@
 // BUTTONS STYLING CODES
 .service-btn {
   display: flex;
-  padding: 0.35rem 2rem;
+  padding: 0.35rem 1rem;
   border: 3px solid $primary;
   border-radius: 2rem;
   background-color: $primary;
@@ -11,7 +11,7 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  max-width: 12rem;
+  max-width: 13rem;
   text-align: center;
   justify-content: center;
 
@@ -31,25 +31,41 @@
     text-decoration: none;
 
     &:hover {
-    color: $white;
-    font-weight: 500;
-    background-color: $primary;
+      color: $white;
+      font-weight: 500;
+      background-color: $primary;
+      border: 3px solid $primary;
+      transition: all 1s;
+    }
+  }
+
+  &.dark {
     border: 3px solid $primary;
-    transition: all 1s;
-  }
-  }
+    border-radius: 2rem;
+    background-color: transparent;
+    color: $primary !important;
+    text-decoration: none;
 
-  span {
-    text-align: center;
-  }
+    &:hover {
+      color: $white !important;
+      font-weight: 500;
+      background-color: $primary !important;
+      border: 3px solid $primary;
+      transition: all 1s;
+    }
 
-  &.big {
-    font-size: 21px;
-    font-weight: 500;
-    padding: 0.35rem 2rem;
-  }
+    span {
+      text-align: center;
+    }
 
-  &.rigid {
-    border-radius: 0.5rem;
+    &.big {
+      font-size: 21px;
+      font-weight: 500;
+      padding: 0.35rem 2rem;
+    }
+
+    &.rigid {
+      border-radius: 0.5rem;
+    }
   }
 }

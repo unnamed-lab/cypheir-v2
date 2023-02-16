@@ -8,6 +8,23 @@ calenderyear();
 }
 
 {
+    function imageTimeChange() {
+        let date = new Date();
+        let time = date.getHours();
+        let tempImg = document.getElementById('tempImg')
+
+        if (time <= 19) {
+            tempImg.innerHTML = `<img src="./assets/img/browser-white.png" alt="">`
+        }
+        else {
+            tempImg.innerHTML = `<img src="./assets/img/browser-dark.png" alt="">`
+        }
+    }
+
+    imageTimeChange();
+}
+
+{
     window.onscroll = function() {pageScroll()};
 
     function pageScroll() {

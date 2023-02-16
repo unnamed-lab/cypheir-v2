@@ -1,0 +1,14 @@
+@use '../custom' as *;
+.dark {
+    &.no-ps {
+        padding: -2rem;
+    }
+    background-color: $dark !important;
+    font-family: "Poppins", "san-serif" !important;
+    color: $white !important;
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+}
