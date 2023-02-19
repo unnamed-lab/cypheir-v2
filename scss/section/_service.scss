@@ -162,13 +162,12 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      
+
       img {
         width: 15rem;
         height: 80%;
         padding: 0 1rem;
         margin: 0 auto;
-        
       }
     }
   }
@@ -176,35 +175,135 @@
   &-main {
     display: block;
     position: relative;
+    overflow: hidden;
+    padding: 3rem 0;
+    font-family: "Poppins", "san-serif";
 
-    .container {
-      padding: 0 1.5rem;
+    .display-3 {
+      text-transform: capitalize;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.25rem;
+    }
 
-      .display-6 {
-        font-weight: 500;
-        text-transform: capitalize;
-        margin-bottom: 1rem;
+    .subtitle {
+      text-transform: capitalize;
+      font-size: 23px;
+      font-weight: 500;
+      color: $gray-600;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .card-service {
+      display: flex;
+      position: relative;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      background-color: $white;
+      border: 1px solid $gray-200;
+      padding: 1rem;
+      border-radius: 1rem;
+      // border-left: 5px solid $primary;
+      border-left: 5px solid $black;
+      height: 12rem;
+      max-height: 13rem;
+
+      &:hover {
+        background-color: $gray-100;
+        // border-left: 5px solid $black;
+        border-left: 5px solid $primary;
+        box-shadow: 2px 2px 4px 1px $gray-200;
+        transition: all 1s;
       }
 
-      img {
-        margin: 0 auto;
-        float: right;
-        width: 15rem;
+      &.black {
+        border-left: 5px solid $gray-900;
       }
 
-      p {
-        margin-bottom: .5rem;
-        font-weight: 600;
+      .card-writeup {
+        display: grid;
 
-        &.endnote {
-          font-size: 20px;
-          font-weight: 400;
-          margin-top: 2rem;
-          margin-bottom: 1rem;
+        h5 {
+          font-weight: 600;
+          margin-bottom: 5px;
+          justify-self: flex-start;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .service-btn {
+          justify-self: baseline;
         }
       }
     }
+  }
 
+  &-content {
+    position: relative;
+    display: flex;
+    flex-grow: inherit;
+    padding: 2rem 0;
+
+    .web-indicator {
+      position: absolute;
+      top: 12px;
+      left: 60px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 20px solid $dark;
+    }
+
+    &-body {
+      border: 1px solid $dark;
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      padding: 2rem 1rem;
+
+      .content {
+        padding: .5rem 0;
+
+        &-img {
+          margin: auto;
+          width: 30rem;
+          overflow: hidden;
+        }
+      
+        &-header {
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 30px;
+      }
+
+      &-subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: $gray-700;
+        margin-bottom: .5rem;
+      }
+
+      &-details {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: .5rem;
+      }
+
+      &-divider {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: oblique;
+        padding: 1rem 0;
+      }
+    }
+    }
   }
 }
 

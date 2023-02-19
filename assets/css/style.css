@@ -10798,7 +10798,18 @@ SECONDARY COLOUR: #88d6fd;
   font-weight: 500;
   max-width: 13rem;
   text-align: center;
-  justify-content: center;
+  text-transform: capitalize;
+}
+.service-btn span {
+  margin: 0 auto;
+  align-self: center;
+  text-align: center;
+}
+.service-btn span i {
+  margin-left: 5px;
+}
+.service-btn.rigid {
+  border-radius: 0.5rem !important;
 }
 .service-btn:hover {
   color: #1ca7ec;
@@ -10807,6 +10818,10 @@ SECONDARY COLOUR: #88d6fd;
   border: 3px solid #1ca7ec;
   transition: all 1s;
 }
+.service-btn.small {
+  padding: 5px 1.5rem !important;
+  font-size: 14px !important;
+}
 .service-btn.light {
   border: 3px solid #1ca7ec;
   border-radius: 2rem;
@@ -10814,12 +10829,28 @@ SECONDARY COLOUR: #88d6fd;
   color: #1ca7ec;
   text-decoration: none;
 }
+.service-btn.light-black {
+  border: 3px solid #000 !important;
+  background-color: #fff !important;
+  color: #000;
+  font-weight: 500;
+}
+.service-btn.light-black:hover {
+  color: #fff;
+  font-weight: 500;
+  background-color: #000 !important;
+  border: 3px solid #000 !important;
+  transition: all 1s;
+}
 .service-btn.light:hover {
   color: #fff;
   font-weight: 500;
   background-color: #1ca7ec;
   border: 3px solid #1ca7ec;
   transition: all 1s;
+}
+.service-btn.light.rigid {
+  border-radius: 0.5rem !important;
 }
 .service-btn.dark {
   border: 3px solid #1ca7ec;
@@ -10844,7 +10875,7 @@ SECONDARY COLOUR: #88d6fd;
   padding: 0.35rem 2rem;
 }
 .service-btn.dark.rigid {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem !important;
 }
 
 .dark {
@@ -11235,29 +11266,115 @@ SECONDARY COLOUR: #88d6fd;
 .service-main {
   display: block;
   position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+  font-family: "Poppins", "san-serif";
 }
-.service-main .container {
-  padding: 0 1.5rem;
-}
-.service-main .container .display-6 {
-  font-weight: 500;
+.service-main .display-3 {
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.25rem;
 }
-.service-main .container img {
-  margin: 0 auto;
-  float: right;
-  width: 15rem;
+.service-main .subtitle {
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-.service-main .container p {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-.service-main .container p.endnote {
-  font-size: 20px;
-  font-weight: 400;
+.service-main .card-service {
+  display: flex;
+  position: relative;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-left: 5px solid #000;
+  height: 12rem;
+  max-height: 13rem;
+}
+.service-main .card-service:hover {
+  background-color: #f8f9fa;
+  border-left: 5px solid #1ca7ec;
+  box-shadow: 2px 2px 4px 1px #e9ecef;
+  transition: all 1s;
+}
+.service-main .card-service.black {
+  border-left: 5px solid #0e0f0f;
+}
+.service-main .card-service .card-writeup {
+  display: grid;
+}
+.service-main .card-service .card-writeup h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  justify-self: flex-start;
+}
+.service-main .card-service .card-writeup p {
+  font-size: 14px;
+}
+.service-main .card-service .card-writeup .service-btn {
+  justify-self: baseline;
+}
+.service-content {
+  position: relative;
+  display: flex;
+  flex-grow: inherit;
+  padding: 2rem 0;
+}
+.service-content .web-indicator {
+  position: absolute;
+  top: 12px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #212529;
+}
+.service-content-body {
+  border: 1px solid #212529;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+}
+.service-content-body .content {
+  padding: 0.5rem 0;
+}
+.service-content-body .content-img {
+  margin: auto;
+  width: 30rem;
+  overflow: hidden;
+}
+.service-content-body .content-header {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.service-content-body .content-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+.service-content-body .content-details {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.service-content-body .content-divider {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: oblique;
+  padding: 1rem 0;
 }
 
 .portfolio {

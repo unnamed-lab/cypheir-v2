@@ -13,7 +13,22 @@
   font-weight: 500;
   max-width: 13rem;
   text-align: center;
-  justify-content: center;
+  text-transform: capitalize;
+
+  span {
+    margin: 0 auto;
+    align-self: center;
+    text-align: center;
+
+    i {
+      margin-left: 5px;
+      
+    }
+  }
+
+  &.rigid {
+      border-radius: 0.5rem !important;
+    }
 
   &:hover {
     color: $primary;
@@ -23,6 +38,12 @@
     transition: all 1s;
   }
 
+  &.small {
+    padding: 5px 1.5rem !important;
+    font-size: 14px !important;
+
+  }
+
   &.light {
     border: 3px solid $primary;
     border-radius: 2rem;
@@ -30,12 +51,31 @@
     color: $primary;
     text-decoration: none;
 
+    &-black {
+      border: 3px solid $black !important;
+      background-color: $white !important;
+      color: $black;
+      font-weight: 500;
+
+      &:hover {
+      color: $white;
+      font-weight: 500;
+      background-color: $black !important;
+      border: 3px solid $black !important;
+      transition: all 1s;
+    }
+    }
+
     &:hover {
       color: $white;
       font-weight: 500;
       background-color: $primary;
       border: 3px solid $primary;
       transition: all 1s;
+    }
+
+    &.rigid {
+      border-radius: 0.5rem !important;
     }
   }
 
@@ -65,7 +105,7 @@
     }
 
     &.rigid {
-      border-radius: 0.5rem;
+      border-radius: 0.5rem !important;
     }
   }
 }
